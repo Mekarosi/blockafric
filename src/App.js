@@ -1,11 +1,11 @@
 import './App.css';
-import Header from './components/Header'
+import HeaderSection from './components/HeaderSection'
 import MidSection from './components/MidSection'
 
 function App() {
   return (
     <div className="container">
-       <Header/>
+       <HeaderSection/>
        <MidSection/>
     </div>
   );
