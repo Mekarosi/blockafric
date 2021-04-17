@@ -10,8 +10,9 @@ class MidSection extends Component {
                 <div className="mid_sectionA">
                     <div className="mid_sectionA_one">
                         <span>
-                            <h5 className="white_circle"><span className="white_circle_text1"
-                            >AFYA</span> </h5>
+                            <div className="white_circle">
+                                <span className="white_circle_text1">AFYA</span>
+                            </div>
                             <p className="mid_section_number">143.00</p>
                             <p className="mid_section_text">Balance</p>
                         </span>
@@ -38,7 +39,8 @@ class MidSection extends Component {
                 </div>
                 <div className="mid_convert_factor">
                     <div>
-                        <span className="mid_convert_factor_text">AFYA</span> <span className="mid_convert_factor_number">0.00000001</span>
+                        <span className="mid_convert_factor_text">AFYA</span> 
+                        <span className="mid_convert_factor_number">0.00000001</span>
                     </div>
                     </div>
                     <div className="send_receive">
@@ -62,19 +64,19 @@ class MidSection extends Component {
                     <ul>
                         <li className="recent_activities_list">
                             <span><img src={image5} className='' alt='battery' /></span>
-                            <p>HIV Blood Draw Test</p>
-                            <p>A100</p>
+                            <p className="recent_activities_name">HIV Blood Draw Test</p>
+                            <p className="recent_activities_number">A100</p>
 
                         </li>
                         <li className="recent_activities_list">
                             <span><img src={image6} className='' alt='battery' /></span>
-                            <p>TB Radiology XRay</p>
-                            <p>A30</p>
+                            <p className="recent_activities_name">TB Radiology XRay</p>
+                            <p className="recent_activities_number">A30</p>
                         </li>
                         <li className="recent_activities_list">
                         <span><img src={image7} className='' alt='battery' /></span>
-                            <p>Blood Pressure Check</p>
-                            <p>A10</p>
+                            <p className="recent_activities_name">Blood Pressure Check</p>
+                            <p className="recent_activities_number">A10</p>
                         </li>
                     </ul>
 

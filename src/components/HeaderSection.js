@@ -11,7 +11,7 @@ class Header extends Component {
             <div className="header">
             <div className="header_one">
                 <div>
-                    <p>4.02</p>
+                    <p className="header_time">4.02</p>
                 </div>
                 <div>
                     <span className='image8'>
