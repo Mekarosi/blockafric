@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import image5 from '../images/image5.JPG'
 import image6 from '../images/image6.JPG'
 import image7 from '../images/image7.JPG'
+import image14 from '../images/image14.JPG'
 
 class MidSection extends Component {
     render() {
@@ -18,8 +19,8 @@ class MidSection extends Component {
                         </span>
 
                     </div>
-                    <div>
-                        <span className="vertical_line"></span>
+                    <div
+                         className="vertical_line">
                     </div>
                     <div className="mid_sectionA_two">
                     <span>
@@ -39,7 +40,7 @@ class MidSection extends Component {
                 </div>
                 <div className="mid_convert_factor">
                     <div>
-                        <span className="mid_convert_factor_text">AFYA</span> 
+                        <span className="mid_convert_factor_text">AFYA <span><img src={image14} className='' alt='battery' /></span></span> 
                         <span className="mid_convert_factor_number">0.00000001</span>
                     </div>
                     </div>
