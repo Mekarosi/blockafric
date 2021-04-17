@@ -6,6 +6,12 @@ import image12 from '../images/image12.JPG'
 import image13 from '../images/image13.JPG'
 
  class FooterSection extends Component {
+
+    handleClick = (e) => {
+        e.preventDefault();
+        console.log('hello')
+    }
+
     render() {
         return (
             <div>
@@ -28,7 +34,7 @@ import image13 from '../images/image13.JPG'
                         
                     </div>
                     <div> 
-                        <span className='image12'>
+                        <span className='image12' onClick={this.handleClick}>
                             <img src={image12} className='' alt='Market' />
                         </span>
                         
