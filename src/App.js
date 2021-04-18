@@ -89,11 +89,27 @@ render(){
  </div>
 
  <div className="footer_secction">
-    <p className="footersection_item_name">Home</p>
-    <p className="footersection_item_name">Activity</p>
-    <p className="footersection_item_name">Wallet</p>
-    <p className="footersection_item_name">Market</p>
-    <p className="footersection_item_name">Earn</p>  
+    <Link to='home'>
+      <p className="footersection_item_name" onClick={e => this.homeRedirect()}>Home</p>
+    </Link>
+
+    <Link to='activity'>
+       <p className="footersection_item_name" onClick={e => this.activityRedirect()}>Activity</p>
+    </Link>
+
+    <Link to='wallet'>
+       <p className="footersection_item_name" onClick={e => this.walletRedirect() }>Wallet</p>
+    </Link>
+   
+    <Link to='market'>
+    <p className="footersection_item_name" onClick={e => this.marketRedirect()}>Market</p>
+    </Link>
+
+    <Link to='earn'>
+    <p className="footersection_item_name" onClick={e => this.earnRedirect()} >Earn</p> 
+    </Link>
+    
+     
  </div>
 <br/>
 </div>
