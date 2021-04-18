@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 
-class ActivityPage extends Component {
+ class ActivityPage extends Component {
     render() {
         return (
             <div>
-                <h1>Activity Page</h1>
+                <h1>
+                    Activity Page
+                </h1>
             </div>
         )
     }

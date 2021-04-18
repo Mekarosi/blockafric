@@ -3,11 +3,11 @@ import './App.css';
 import { BrowserRouter, Route, Switch, Redirect, Link  } from 'react-router-dom'
 import HeaderSection from './components/HeaderSection'
 import MidSection from './components/MidSection'
-import ActivityPage from './components/innerPages/ActivityPage'
-import EarnPage from './components/innerPages/EarnPage'
-import HomePage from './components/innerPages/HomePage'
-import MarketPage from './components/innerPages/MarketPage'
-import WalletPage from './components/innerPages/WalletPage'
+import ActivityPage from './components/pages/ActivityPage'
+import EarnPage from './components/pages/EarnPage'
+import HomePage from './components/pages/HomePage'
+import MarketPage from './components/pages/MarketPage'
+import WalletPage from './components/pages/WalletPage'
 import image8 from './images/image8.JPG'
 import image10 from './images/image10.JPG'
 import image11 from './images/image11.JPG'
@@ -89,11 +89,27 @@ render(){
  </div>
 
  <div className="footer_secction">
-    <p className="footersection_item_name">Home</p>
-    <p className="footersection_item_name">Activity</p>
-    <p className="footersection_item_name">Wallet</p>
-    <p className="footersection_item_name">Market</p>
-    <p className="footersection_item_name">Earn</p>  
+    <Link to='home'>
+      <p className="footersection_item_name" onClick={e => this.homeRedirect()}>Home</p>
+    </Link>
+
+    <Link to='activity'>
+       <p className="footersection_item_name" onClick={e => this.activityRedirect()}>Activity</p>
+    </Link>
+
+    <Link to='wallet'>
+       <p className="footersection_item_name" onClick={e => this.walletRedirect() }>Wallet</p>
+    </Link>
+   
+    <Link to='market'>
+    <p className="footersection_item_name" onClick={e => this.marketRedirect()}>Market</p>
+    </Link>
+
+    <Link to='earn'>
+    <p className="footersection_item_name" onClick={e => this.earnRedirect()} >Earn</p> 
+    </Link>
+    
+     
  </div>
 <br/>
 </div>
